@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="UpperProfileTab">
+    <img src="{{ url_for('static', filename='HueyFreeman_Boondocks.jpg')}}" alt="I am the stone that the builder refused">
+    <h1>Giovanni Lawrence</h1>
+    <p>@SirOutlandish</p>
+    <p>St. Andrew, Jamaica</p>
+    <p>{{ date }}</p>
+    <div class="LowerProfileTab">
+        <p>I am just him in every possible sense and plane of existence</p>    
+        <table>
+            <tr>
+                <th>
+                    70
+                </th>
+                <th>
+                    150
+                </th>
+                <th>
+                    60k
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Posts
+                </td>
+                <td>
+                    Following
+                </td>
+                <td>
+                    Followers
+                </td>
+            </tr>
+        </table>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
